@@ -1,0 +1,16 @@
+.m-product{float:left; width:100%;}
+.product-title span{float:left; padding:5px; color:#fff; font-size:16px; font-weight:bold; text-transform:uppercase; background:#45beec;}
+.product-title{float:left; display:block; width:100%; border-bottom:2px solid #45beec;}
+
+.carouselDiv{position:relative; float:left; width:980px; height:137px; margin:17px 0; padding-bottom:15px; overflow:hidden; border-bottom:2px solid #b1b1b1;}
+.carouselDiv .prev{position:absolute; left:0px; top:39px;}
+.carouselDiv .next{position:absolute; right:0px; top:39px;}
+.carouselCase{position:relative; margin:0 auto; padding-right:0; overflow:hidden;}
+.carouselCase ul{margin:0 auto; padding-right:0; overflow:hidden; }
+.carouselCase li{float:left; overflow:hidden;}
+.item{position:relative; width:137px; height:137px; margin:0 10px; text-align:center;}
+.item img{width:135px; height:110px; margin:1px;}
+.item a{color:#323232; width:137px; height:137px; display:block; background:url(../img/main/item-off.png) left top no-repeat;}
+.item a:hover{color:#fff; background:url(../img/main/item-on.png) left top no-repeat; text-decoration:none;}
+.item p.item-t{position:absolute; z-index:100; width:137px; height:10px; background:url(../img/main/item-t.png) left top no-repeat}
+.item p.item-title{height:15px; width:137px; padding:5px 0; text-transform:capitalize;}

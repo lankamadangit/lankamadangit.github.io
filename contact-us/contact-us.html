@@ -1,0 +1,83 @@
+<? include "../inc/header.php";?>
+
+<form onsubmit='return FormCheck();' name="UserInfo" method="post" action="/winko/kit/inquiry/e_inquiry_ok.php" enctype="multipart/form-data">
+<div class="agree_a">
+	<span class="lh">&nbsp;<b>Personal Information</b></span>
+	<fieldset class="agree" style="height:400px; overflow-y:scroll;">
+		<div>
+			<p>In accordance with relevant laws and regulations, <br/>DYNE GLOBAL Co., Ltd hereby informing that we collect personal information to use for quotation, and to answer questions, for which we ask you to agree with.</p>
+			<h1>■ Collect items and use of personal information</h1>
+			<ul>
+				<li>Necessary items - name, company name, phone number, <br/>E-mail, inquiry subject, content, security code.</li>
+				<li>Optional item – Phone number</li>
+			</ul>
+			<h1>■ The purpose of collecting personal information and its usage</h1>
+			<ul>
+				<li>Collected personal information will be used to issue the quotation and will not be used for any other purpose.</li>
+			</ul>
+			<h1>■ The keeping and using term of personal information</h1>
+			<ul>
+				<li>The personal information will be retained during the issuing of quotation, and shall be disposed just after issuing quotation. (However, if otherwise decided from law, it can be retained until the requested period)</li>
+			</ul>
+			<h1>■ The right to deny consent and disadvantages of personal information</h1>
+			<ul>
+				<li>If you do not state the necessary items, you cannot use this service. However, even if you do not input the optional items, this service is available.</li>
+			</ul>
+		</div>
+	</fieldset>
+	<div class="check">
+		<p class="agree_more">Other details regarding the handling of personal information, please refer to the <a href="../privacy-policy/">Privacy Policy </a> in our website that is open to the public</p>
+		<input name="check1" id="check1" type="checkbox" value="1">
+		<label for="check1">I agree to provide my personal information</label>
+	</div>
+</div>
+<div class="about">
+	<!--h4>Other Business Inquiry</h4-->
+	<div class="inquiry" style="margin-left:40px;">
+		<p style="text-align:right;">* Marks are required to input.</p>
+		<hr/>
+		<dl>
+			<dt><span>*</span> Subject</dt>
+			<dd><label for="Subject">Subject</label><input type="text" name="Subject" id="Subject" class="inquiry_field" placeholder="Please enter the Subject" style="ime-mode:disabled;" /></dd>
+			<dt><span>*</span> Your name</dt>
+			<dd><label for="Name">Your name</label><input type="text" name="Name" id="Name" class="inquiry_field" placeholder="Please enter the name" style="ime-mode:disabled;" /></dd>
+			<dt><span>*</span> Your e-mail</dt>
+			<dd><label for="Email">Your e-mail</label><input type="text" name="Email" id="Email" class="inquiry_field" placeholder="Please enter the e-mail" style="ime-mode:disabled;" /></dd>
+			<dt><span>*</span> Your telephone number</dt>
+			<dd><label for="Phone">Phone</label><input type="text" name="Phone" id="Phone" class="inquiry_field" placeholder="Please enter the telephone number"  /></dd>
+			<dt><span>*</span>Your company</dt>
+			<dd><label for="Company">Your company</label><input type="text" name="Company" id="Company" class="inquiry_field" placeholder="Please enter the company" style="ime-mode:disabled;" /></dd>
+			<dt>Your country</dt>
+			<dd><label for="Country">Your country</label><input type="text" name="Country" id="Country" class="inquiry_field" placeholder="Please enter the country" style="ime-mode:disabled;" /></dd>
+			<dt><span>*</span> Message</dt>
+			<dd>
+				<label>
+					<textarea id="Comment" name="Comment" cols="70" rows="5" class="inquiry_field" placeholder="Please enter the Message" style="font-family:arial; ime-mode:disabled;"> </textarea>
+				</label>
+			</dd>
+			<dt>Security Code</dt>
+			<?
+			//자동등록방지 문구 지정
+			$sLen = 5;//5개의 글자 열을 지정을 하고
+			// 랜덤 문자 뽑아오기
+			for( $i=0; $i<10; $i++ ) $sMatch[] = $i;//배열에 값들을 집어 넣고 나서/
+			$max = count($sMatch)-1;//9까지 들어 각고
+			$sFullString="";
+			for($i=0; $i<$sLen; $i++) {
+				$key = mt_rand(0,$max);//
+				$str .= "{$sMatch[$key]}/";
+				$sFullString .= $sMatch[$key];
+				//나온 글자를 가지고 가네
+			}
+			//자동등록방지 문구 지정
+			?>
+			<dd><img src="/spamCheck/image.php?autoStrParam=<?=$sFullString?>" alt=""/><input type="hidden" name="sFullString" value="<?=$sFullString?>" /><label for="SecurityCode">Please enter Security Code.</label><input type="text" name="autoJoin" id="SecurityCode" maxlength="5"  class="inquiry_field" style='width:150px;IME-MODE: disabled;margin-left:6px;' onKeyDown = "javascript:onlyNumberInput2(event)" /> <br /><span> * Please type the letters in the image left.</span></dd>
+		</dl>
+		<div class="in_btn">
+			<input src="../img/contact-us/btnsend.gif" type="image" alt="send"/> <a href="javascript:document.UserInfo.reset();"><img src="../img/contact-us/btncancel.gif" alt="취소"/></a>
+		</div><!--in_btn-->
+	</div><!--inquiry-->
+</div>
+</form>
+
+<? include "../inc/footer.php";?>

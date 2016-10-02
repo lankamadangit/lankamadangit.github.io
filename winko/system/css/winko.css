@@ -1,0 +1,70 @@
+table
+{
+	font-family:±¼¸²;
+	font-size: 9pt;
+	color: #45555F;
+	line-height:16pt;
+
+}
+
+A:link, A:active, A:visited {
+	font-family:±¼¸²;
+	font-size: 9pt;
+	color: #45555F;
+	text-decoration: none;
+}
+
+A:hover {
+	font-family:±¼¸²;
+	font-size:9pt;
+	cursor:hand;
+	color:#336699;
+}
+
+td {
+	font-family:±¼¸²;
+	font-size:9pt;
+	color:#45555F;
+    line-height:15pt;
+}
+
+.input {  font-family: "µ¸¿ò"; font-size: 9pt; color: #666666; text-decoration: none; border: #CCCCCC; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.Input1 {  font-family: "µ¸¿ò"; font-size: 9pt; color: #666666; text-decoration: none; border: #CCCCCC; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.Input2 {  font-family: "µ¸¿ò"; font-size: 9pt; color: #000000; text-decoration: none; border: #7F9DB9; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; height:21px; padding-top:3px}
+.Point1 {  font-family: "µ¸¿ò"; font-size: 11px; line-height: 14px; color: #660066; text-decoration: none}
+.Wtext {  font-family: "µ¸¿ò"; font-size: 9pt; line-height: 14pt; color: #FFFFFF; text-decoration: none}
+.Point2 {  font-family: "µ¸¿ò"; font-size: 11px; line-height: 14px; color: #0C6260; text-decoration: none}
+.Point3 {  font-family: "µ¸¿ò"; font-size: 9pt; line-height: 14pt; font-weight: bold; color: #006699; text-decoration: none}
+
+TEXTAREA
+{
+    BORDER-BOTTOM: 1px solid;
+    BORDER-LEFT: 1px solid;
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    border-color:rgb(204,204,204); 
+    FONT-FAMILY: ±¼¸², Arial;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 1.3em;
+    OVERFLOW: show
+}
+.thm8 {font-family:Tahoma;font-size:8pt;}
+.ver9 {font-family:Tahoma;font-size:8pt;}
+.Arial {font-family:Arial;}
+.Arial7 {font-family:Arial;font-size:7pt;}
+.Arial8 {font-family:Arial;font-size:8pt;}
+.submit {border:solid 1;font-size:9pt;padding-top:2px;color:#ffffff;background-color:#666666;height:20px}
+
+.Stext {
+	font-family: "µ¸¿ò";
+	font-size: 11px;
+	line-height: 14px;
+}
+
+.Mtext {
+	font-family: "µ¸¿ò";
+	font-size: 12px;
+	line-height: 14px;
+	color: #3867AB;
+	font-weight: bold;
+}

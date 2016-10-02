@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* smart-bidet */
+.smart-bidet{clear:both; float:left; background:url(../img/bidet/smart-bg01.png) no-repeat 0 0;}
+.smart-bidet h3{font-size:18px; color:#0070bd; line-height:20px; padding-bottom:8px;}
+.smart-bidet li{font-size:14px; font-weight:bold; line-height:16px; padding-left:8px; background:url(../img/bidet/shape01.jpg) no-repeat 0 6px;}
+
+.sbidet-water{clear:both; padding:104px 0 0 13px;}
+.sbidet-water p{width:740px; padding-bottom:7px; border-top:2px solid #23b2e8;}
+
+.water-txt{clear:both; float:left; background:url(../img/bidet/smart-bidet-title-bg.jpg) no-repeat 0 0;}
+.water-txt dl{clear:both; float:left; font-size:18px; color:#fff; font-weight:bold; padding-bottom:43px;}
+.water-txt dt{float:left; width:86px; padding:10px 0 10px 11px;}
+.water-txt dd{float:left; width:632px; font-size:16px; padding:10px 0 10px 11px;}
+
+.smart-water{clear:both; float:left; width:766px; text-align:center; padding-bottom:70px; border-top:1px solid #dadada; background:url(../img/bidet/smart-bidet-bg.jpg) no-repeat 0 0;}
+.smart-water div{margin-left:10px;}
+.smart-water p{clear:both; font-size:14px; color:#747679; font-weight:bold; padding:50px 0 24px 0;}
+.smart-water dl{width:222px; font-size:11px; line-height:16px;}
+.smart-water dt{color:#0070bd; font-weight:bold;}
+.smart-water dd{color:#747679;}
+.smart-water div{padding-right:20px;}
+
+.water-pressure p{background:url(../img/bidet/prev01.png) no-repeat 134px 53px;}
+.water-pressure p img{vertical-align:middle;}
+.soet-valve{float:left; width:222px; height:222px; background:url(../img/bidet/soft-valve.png) no-repeat 0 0;}
+.soet-valve dl{padding-top:120px;}
+.ceramic{float:left; width:222px; height:222px; background:url(../img/bidet/ceramic-disc-valve.png) no-repeat 0 0;}
+.ceramic dl{padding-top:120px;}
+.smart-water .prevent{float:left; width:222px; height:222px; padding-right:0; background:url(../img/bidet/prevent-back-flow.png) no-repeat 0 0;}
+.prevent dl{padding-top:120px;} 
+
+.nozzle p{background:url(../img/bidet/prev01.png) no-repeat 270px 53px;}
+.nozzle p img{vertical-align:middle;}
+.horizontal{float:left; width:222px; height:222px; background:url(../img/bidet/hygienical-nozzle-cover.png) no-repeat 0 0;}
+.horizontal dl{padding-top:120px;}
+.hygienical{float:left; width:222px; height:222px; background:url(../img/bidet/hygienical-nozzle-cover.png) no-repeat 0 0;}
+.hygienical dl{padding-top:120px;}
+.smart-water .cleaning{float:left; width:222px; height:222px; padding-right:0; background:url(../img/bidet/nozzle-cleaning.png) no-repeat 0 0;}
+.cleaning dl{padding-top:120px;} 
+
+.install-clean p{background:url(../img/bidet/prev01.png) no-repeat 222px 53px;}
+.install-clean p img{vertical-align:middle;}
+.installation{float:left; width:222px; height:222px; background:url(../img/bidet/installation.png) no-repeat 0 0;}
+.installation dl{padding-top:120px;}
+.slim{float:left; width:222px; height:222px; background:url(../img/bidet/slim-nozzle.png) no-repeat 0 0;}
+.slim dl{padding-top:120px;}
+.smart-water .easy{float:left; width:222px; height:222px; padding-right:0; background:url(../img/bidet/easy-cleaning.png) no-repeat 0 0;}
+.easy dl{padding-top:120px;} 
+
+
+
+

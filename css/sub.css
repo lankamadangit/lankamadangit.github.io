@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+.sub_wrap{position:relative; width:980px; margin-top:38px !important;}
+
+/*lnb*/
+.lnb{float:left; width:178px; text-transform:capitalize;}
+.lnb p{clear:both; float:left; height:16px; width:150px; padding:18px 14px; font-weight:bold; font-size:22px; color:#515151; background:url(../img/common/lnb-top.gif) left top no-repeat;}
+.lnb ul{display:block; clear:both; width:178px; padding-bottom:61px; margin-bottom:20px; background:url(../img/common/lnb-bottom.gif) left bottom no-repeat;}
+.lnb ul li{display:block; position:relative; margin:0 auto; width:171px; padding-left:7px; background:url(../img/common/lnb-bg.gif) left top repeat-y;}
+.lnb ul li a{display:block; height:16px; padding:12px 5px; font-size:13px; color:#656565; border-bottom:1px solid #fff;}
+.lnb ul li a:hover{color:#23b2e8; text-decoration:none; font-weight:bold; background:url(../img/common/lnb-bullet.png) 100% top no-repeat; }
+a.on{color:#23b2e8 !important; font-weight:bold; background:url(../img/common/lnb-bullet.png) 100% top no-repeat;}
+.collection_Catalogue a{display:block; width:178px; height:72px; text-align:center; padding:10px 0; background:url(../img/common/collection_bg.jpg) left top no-repeat;}
+.contents_wrap{float:right; width:766px;}
+.sub_title{}
+.sub_title h1{float:left; padding-left:10px; line-height:45px; font-size:34px; color:#747679; text-transform:capitalize; background:url(../img/common/bullet-4.gif) left 6px no-repeat;}
+.brad{float:right; margin:25px 0px 0 0; color:#2b2b2b; text-transform:capitalize;}
+.brad a{color:#747679; }
+.brad a:hover{text-decoration:underline;}
+a.go-home{color:#23b2e8;}
+span.current{color:#747679; font-weight:bold;}
+
+.substance{clear:both; float:left; width:766px; padding:30px 0px 30px 0; line-height:150%; color:#747679;}
+
+/* 비데 (Digital Bidet) */
+.bidet_tab{width:100%; height:28px; padding-bottom:18px; overflow:hidden; background:url(../img/bidet/bidet_tabbg.jpg) left top repeat-x; color:#747679;}
+.bidet_tab ul{float:left;}
+.bidet_tab li{float:left; width:109px; height:28px;} /* width 는 전체 컨텐츠 나누기 7한 값 */
+/*
+.bidet_tab li{float:left; width:109px; height:28px;} /* width 는 전체 컨텐츠 나누기 7한 값
+li.first{background:none;}
+li.first:hover{font-weight:bold; text-decoration:none; background:url(../img/bidet/bidet_tabbg_on.jpg) 2px top repeat-x;}
+.bidet_tab li:hover{font-weight:bold; text-decoration:none; background:url(../img/bidet/bidet_tabbg_on.jpg) left top repeat-x;}
+.bidet_tab li:hover a{color:#747679;}
+.bidet_tab a{display:block; padding:4px 0px; text-align:center; font-size:13px; color:#fff;}
+.bidet_tab a:hover{height:32px; font-weight:bold; text-decoration:none; color:#747679; background:url(../img/bidet/bidet_tab_hit.png) 50% 23px no-repeat;}
+*/
+.bidet_tab li.on{font-weight:bold; text-decoration:none; background:url(../img/bidet/bidet_tabbg_on.jpg) 2px top repeat-x;}
+.bidet_tab li.on a{height:32px; font-weight:bold; text-decoration:none; color:#747679; background:url(../img/bidet/bidet_tab_hit.png) 50% 100% no-repeat;}
+.bidet_tab li:hover{font-weight:bold; text-decoration:none; background:url(../img/bidet/bidet_tabbg_on.jpg) left top repeat-x;}
+.bidet_tab li:hover a{color:#747679;}
+.bidet_tab a{display:block; padding:4px 0px; text-align:center; font-size:13px; color:#fff;}
+.bidet_tab a:hover{height:32px; font-weight:bold; text-decoration:none; color:#747679; background:url(../img/bidet/bidet_tab_hit.png) 50% 100% no-repeat;}
+.bidet_tab span{display:block; margin-left:-1px; background:url(../img/bidet/tab_bar.gif) left 6px no-repeat;}
+.bidet_tab span.first{background:none;}
+
+.bidet_title{height:18px; font-size:13px; color:#0070bd; border-bottom:1px solid #dadada; text-transform:uppercase;}
+.bidet_title span{float:left; height:18px; padding:0px 5px 0px 10px; border-bottom:1px solid #747679; background:url(../img/common/bluetriangleblet1.gif) left 6px no-repeat;}
+.bidet_img img{border:1px solid #b8b8b8;}
+.manual{padding-bottom:30px; text-align:right;}
+
+#showing{padding:20px 0px 0 0px; overflow:hidden;}
+#showing div{float:left; padding-right:25px;}
+#showing div img, #showing a img{border:1px solid #b8b8b8; }
+.thumb{float:left; width:248px;}
+.thumb li{float:left; }
+.thumb_left{padding-right:10px;}
+
+.featuresline{clear:both; width:100%; overflow:hidden;}
+.imgCenter{text-align:center;}
+.imgpos1{padding:30px 0px 0px 0px; text-align:center;}
+.imgpos2{float:left; padding:0px 13px 0px 0px;}
+.rubberList{float:left; width:50%; padding-bottom:8px;}
+	.rubberInfo{float:left; min-height:56px; padding-left:13px; border-left:4px solid #dedede;}
+	.rubberInfo p{width:270px; padding-right:10px; line-height:16px;}
+		.rubberTitle2{font-size:14px; color:#747679;}
+.first2{padding-top:20px;}
+.last2{padding-bottom:40px;}
+
+.imgpos4{float:left; padding:0px 8px 0px 0px;}
+.points{padding:20px 0px 44px 0px; overflow:hidden;}
+.pointInfo{float:left; width:112px;}
+.pointInfo p{line-height:16px;}
+.pointTitle{font-size:14px; color:#23b2e8; letter-spacing:-1px;}
+
+
+.function{clear:both; padding:20px 0px 44px 0px;}
+.function table{width:100%; color:#4b4c4e;}
+.function caption{height:0px; line-height:0px; font-size:0px;}
+.function thead th{padding:3px 0px; border-top:2px solid #bcbcbc; border-right:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7;}
+.function tbody th{padding:3px 0px 3px 14px; text-align:left; border-right:1px solid #d7d7d7; border-right:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7;}
+.function tbody td{padding:3px 0px; text-align:center; border-right:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7;}
+.function th.first, .function td.first{border-top:2px solid #bcbcbc;} .function td.last, .function th.last{border-bottom:2px solid #bcbcbc;}
+.emColor1{background-color:#cbe1f3;} /* light blue */
+.emColor2{color:#6391b7;}
+.imgpos3{float:left; padding:20px 0px 0px 0px;}
+
+/* jQuery UI */
+.ui-state-hover, .ui-state-active, .ui-state-focus { border: none/*{borderColorHover}*/; background: none/*{bgColorHover}*/ }
+.ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited, .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited, .ui-state-focus a, .ui-state-focus a:hover, .ui-state-focus a:link, .ui-state-focus a:visited { color: #212121/*{fcHover}*/; text-decoration: none; }
+
+.btn_top{text-align:center; margin-top:10px;}
+
+.clear{clear:both;}
+.portable{width:754px; height:400px; margin-bottom:22px; padding:20px 0px 0px 20px; background:url(../img/bidet/portable.jpg) left top no-repeat; border-bottom:2px solid #23b2e8;}
+.bidet_title1{float:left; width:300px; height:18px; font-size:13px; color:#0070bd; border-bottom:1px solid #dadada; text-transform:uppercase;}
+.bidet_title1 span{float:left; height:18px; padding:0px 5px 0px 10px; border-bottom:1px solid #747679; background:url(../img/common/bluetriangleblet1.gif) left 6px no-repeat;}
+.portable_txt1{padding:0px 0px 22px 20px; line-height:16px;}
+.portable_txt2{padding:0px 0px 47px 20px;}
+.formation{position:relative; clear:both; float:left; width:282px; height:318px; background:url(../img/bidet/formation.gif) left 20px no-repeat;}
+.formation p{position:absolute; font-weight:bold; color:#4fbbe3;}
+.formation1{top:67px; left:40px;}
+.formation2{top:102px; left:40px;}
+.formation3{top:130px; left:200px;}
+.formation4{top:186px; left:206px;}
+.formation5{top:231px; left:205px; line-height:12px;}
+.formation6{top:233px; left:15px;}
+.formation7{top:257px; left:15px; line-height:12px;}
+.portable-half{float:left; width:50%; height:340px; margin-bottom:40px;}
+.howtouse{position:relative; clear:both; width:742px; height:425px; margin-top:20px; font-weight:bold; color:#4fbbe3; background:url(../img/bidet/use.jpg) left top no-repeat;}
+.howtouse p{position:absolute;}
+.step1{top:80px; left:112px;}
+.step2{top:80px; left:336px;} 
+.step3{top:80px; left:620px;}
+.step4{top:290px; left:112px;}
+.step5{top:290px; left:336px;}
+.step6{top:290px; left:620px;}
+.detail {clear:both; padding:20px 0px 44px 0px;}
+.detail table.detail_table{border:none; color:#4b4c4e;}
+.detail caption{height:0px; line-height:0px; font-size:0px;}
+.detail th{padding:3px 14px 3px 14px; border-right:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7; text-align:left;}
+.detail td{padding:3px 0px 3px 14px ;  text-align:left; border-bottom:1px solid #d7d7d7; color:#6391b7;}
+.detail th.first, .detail td.first{border-top:2px solid #bcbcbc;} .detail th.last, .detail td.last{border-bottom:2px solid #bcbcbc;}

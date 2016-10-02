@@ -1,0 +1,64 @@
+<?
+require "winko/system/config.php";
+include ("winko/system/recent_index.php");
+$popup_result=popup_result("$popup_no"); 
+$popup_result[height] = $popup_result[height] + 39;
+?>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel=StyleSheet HREF="winko/system/css/winko_cn.css" type=text/css title=style>
+<title><?=$popup_result[title]?></title>
+
+<SCRIPT language="JavaScript">
+function setCookie( name, value, expiredays ) {
+	var todayDate = new Date(); 
+	todayDate.setDate( todayDate.getDate() + expiredays );
+	document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+}
+
+function closeWin() {
+	if ( document.forms[0].popup.checked )
+	setCookie( "popup_<?=$popup_result[no]?>", "done" , 1); 
+	self.close();
+}
+
+function popup_close(loc) {
+	if (loc=='popup_link')
+		opener.location.href='<?=$popup_result[link]?>';
+	if (loc=='popup_link2')
+		opener.location.href='<?=$popup_result[link2]?>';
+	if (loc=='popup_link3')
+		opener.location.href='<?=$popup_result[link3]?>';
+	self.close();
+}
+</script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width=<?=$popup_result[width]?> height=<?=$popup_result[height]?> border=0 cellpadding=0 cellspacing=0>
+	<tr>
+		<td>
+			<?$popup_comment=stripslashes($popup_result[comment]);?>
+			<?=$popup_comment?>
+		</td>
+	</tr>
+	<tr height="39">
+		<td background="winko/system/winko_img/popup_td.gif">
+			<table cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td>
+						<p align="center"><form name="popup"><input type=CHECKBOX name="popup">Do not show this window again today.</p>
+					</td>
+					<td width="76">
+						<p><a href="javascript:closeWin();"><img src="winko/system/winko_img/popup_close.gif" width="76" height="39" border="0"></a></p>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+<!-- <a href="javascript:popup_close('popup_link');"> -->

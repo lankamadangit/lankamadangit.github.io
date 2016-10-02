@@ -1,0 +1,38 @@
+<?
+        //자동등록방지 문구 지정
+        $sLen = 5;
+        // 랜덤 문자 뽑아오기
+        for( $i=0; $i<10; $i++ ) $sMatch[] = $i;
+        $max = count($sMatch)-1;
+        $sFullString="";
+        for($i=0; $i<$sLen; $i++) 
+        {
+            $key = mt_rand(0,$max);
+            $str .= "{$sMatch[$key]}/";
+            $sFullString .= $sMatch[$key];
+        }
+        //자동등록방지 문구 지정
+?>
+<form name="form">
+<input type="hidden" name="sFullString" value="<?=$sFullString?>" onsubmit="return doIn()">
+<img src="image.php?autoStrParam=<?=$sFullString?>">&nbsp;<input name="autoJoin" type="text" maxlength="5" style="width:80px; background-color:#f3f5f5">
+</form>
+<script type="text/javascript">
+//<![CDATA[
+function doIn()
+{
+    var f = document.form;
+    if(f.sFullString.value != f.autoJoin.value)
+    {
+        alert('자동방지입력번호가 일치하지 않습니다.');
+        f.autoJoin.value = "";
+        f.autoJoin.focus();
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+//]]>
+</script>

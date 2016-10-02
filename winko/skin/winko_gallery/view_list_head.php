@@ -1,0 +1,1 @@
+<table align="center" cellpadding="0" cellspacing="0" width="<?=$table_width?>">

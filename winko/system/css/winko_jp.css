@@ -1,0 +1,31 @@
+A:link, A:active, A:visited {
+	font-size: 10pt;
+	color: #333333;
+	text-decoration: none;
+}
+
+A:hover {
+	font-size:10pt;
+	cursor:hand;
+	color:#7A0600;
+}
+
+table
+{
+	font-size: 10pt;
+	color: #333333;
+	line-height:16pt;
+	text-decoration:none;
+}
+td
+{
+	font-size: 10pt;
+	color: #333333;
+	line-height:16pt;
+	text-decoration:none;
+}
+.font10{text-decoration : none ; font-size :10pt ;color:#000000;letter-spacing:-0.05em; line-height: 12pt; }
+.font10 a:hover { color:#11114D; text-decoration: underline;}
+.Arial9 {font-family:Arial;font-size:9pt;}
+.font_menu{font-size :10pt ;color:#333333;line-height: 14pt; }
+.thm8 {font-family:Tahoma;font-size:8pt;}
